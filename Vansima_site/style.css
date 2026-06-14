@@ -372,3 +372,211 @@ footer {
   opacity: 0.9;
 }
 
+
+
+/* ===== Vansima Technology Website 2.0 ===== */
+:root {
+  --v-black: #050508;
+  --v-panel: rgba(255,255,255,0.07);
+  --v-purple: #8b5cf6;
+  --v-cyan: #00e0ff;
+  --v-text: #f8fafc;
+  --v-muted: #a9b3c6;
+}
+body {
+  background: var(--v-black);
+  color: var(--v-text);
+}
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.glass-nav {
+  background: rgba(5, 5, 8, 0.88);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 14px 7%;
+}
+.logo-lockup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.nav-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+.nav-links { flex-wrap: wrap; justify-content: flex-end; }
+.nav-links a:hover { color: var(--v-cyan); }
+.tech-hero {
+  min-height: 92vh;
+  height: auto;
+  padding: 110px 7% 80px;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(139,92,246,0.25), transparent 34%),
+    radial-gradient(circle at 80% 20%, rgba(0,224,255,0.16), transparent 26%),
+    linear-gradient(135deg, #050508 0%, #090919 60%, #020204 100%);
+  overflow: hidden;
+}
+.tech-hero::after { display: none; }
+.hero-glow {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: rgba(139,92,246,0.16);
+  filter: blur(70px);
+  animation: pulseGlow 5s ease-in-out infinite alternate;
+}
+.hero-content {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.hero-logo {
+  width: 180px;
+  max-width: 55vw;
+  margin-bottom: 22px;
+  filter: drop-shadow(0 0 24px rgba(139,92,246,0.38));
+}
+.eyebrow, .section-kicker {
+  color: var(--v-cyan);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 0.78rem;
+}
+.tech-hero h1 {
+  font-size: clamp(2.7rem, 8vw, 6.4rem);
+  line-height: 0.95;
+  margin: 18px 0;
+  color: #fff;
+  text-shadow: 0 0 30px rgba(0,224,255,0.18);
+}
+.hero-subtitle {
+  font-size: clamp(1.35rem, 3vw, 2.2rem);
+  color: #fff;
+  margin-bottom: 18px;
+}
+.hero-copy {
+  max-width: 730px;
+  margin: 0 auto;
+  color: var(--v-muted);
+  font-size: 1.08rem;
+}
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 800;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--v-cyan), var(--v-purple));
+  color: #030305;
+  box-shadow: 0 0 28px rgba(0,224,255,.22);
+}
+.btn-secondary {
+  border: 1px solid rgba(255,255,255,.18);
+  color: #fff;
+  background: rgba(255,255,255,.05);
+}
+.btn-primary:hover, .btn-secondary:hover { transform: translateY(-3px); }
+.ecosystem-section {
+  padding: 90px 7%;
+  background: #07070d;
+  text-align: center;
+}
+.ecosystem-section h2, .signature-section h2, .cta-section h2 {
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  margin: 10px auto 28px;
+  max-width: 820px;
+}
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  margin-top: 34px;
+}
+.ecosystem-card {
+  background: var(--v-panel);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 24px;
+  padding: 28px;
+  text-align: left;
+  box-shadow: 0 20px 60px rgba(0,0,0,.25);
+}
+.ecosystem-card:hover {
+  border-color: rgba(0,224,255,.35);
+  transform: translateY(-4px);
+  transition: .25s ease;
+}
+.card-icon { font-size: 2rem; }
+.ecosystem-card h3 { margin: 16px 0 10px; color: #fff; }
+.ecosystem-card p { color: var(--v-muted); }
+.ecosystem-card a { color: var(--v-cyan); font-weight: 800; display: inline-block; margin-top: 18px; }
+.signature-section {
+  padding: 90px 7%;
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 30px;
+  align-items: center;
+  background: linear-gradient(135deg, #050508, #11112a);
+}
+.signature-section p { color: var(--v-muted); max-width: 640px; }
+.signature-card {
+  border: 1px solid rgba(0,224,255,.25);
+  border-radius: 28px;
+  padding: 38px;
+  background: rgba(0,224,255,.05);
+  text-align: center;
+  box-shadow: 0 0 60px rgba(0,224,255,.08);
+}
+.signature-card p { color: #fff; font-size: 1.5rem; font-weight: 900; margin: 0 auto 12px; }
+.signature-card span { color: var(--v-cyan); }
+.cta-section {
+  padding: 85px 7%;
+  text-align: center;
+  background: #090912;
+}
+.email-form { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+.email-form input { padding: 15px 18px; min-width: 280px; border-radius: 999px; border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.07); color: #fff; }
+.email-form button { border: none; border-radius: 999px; padding: 15px 24px; font-weight: 900; background: var(--v-cyan); color: #000; }
+.site-footer-dark {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 32px 18px;
+  line-height: 1.9;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+.page-hero {
+  min-height: 72vh;
+  padding: 110px 7% 70px;
+  text-align: center;
+  background: radial-gradient(circle at top, rgba(139,92,246,.25), transparent 40%), #050508;
+}
+.page-logo { width: 145px; margin-bottom: 18px; }
+.page-hero h1 { font-size: clamp(2.6rem, 7vw, 5.5rem); margin: 12px 0; }
+.page-hero p { color: var(--v-muted); max-width: 760px; margin: 0 auto 28px; }
+@keyframes pulseGlow { from { transform: scale(.92); opacity:.55;} to { transform: scale(1.08); opacity:1;} }
+@media (max-width: 850px) {
+  .navbar { align-items: flex-start; gap: 18px; }
+  .nav-links { gap: 12px; font-size: .9rem; }
+  .signature-section { grid-template-columns: 1fr; }
+  .tech-hero { padding-top: 85px; }
+}

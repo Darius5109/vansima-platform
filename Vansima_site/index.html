@@ -3,53 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vansima Digital</title>
+  <title>Vansima | Built with Vansima Technology</title>
+  <meta name="description" content="Vansima builds technology for wealth, business, real estate, focus, and legacy.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <header> 
-    <nav class="navbar">
-      <div class="logo">VANSIMA</div>
+  <header class="site-header">
+    <nav class="navbar glass-nav">
+      <a class="logo-lockup" href="index.html" aria-label="Vansima Home">
+        <img src="vansima-logo.png" alt="Vansima logo" class="nav-logo">
+        <span>VANSIMA</span>
+      </a>
       <ul class="nav-links">
-        <li><a href="./shop.html">Shop</a></li>
-        <li><a href="./vansima_hub_live.html">Hub</a></li>
-        <li><a href="#newsletter">Join</a></li>
-        <li><a href="./cart.html">Cart 🛒</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="wealth.html">Wealth</a></li>
+        <li><a href="business.html">Business</a></li>
+        <li><a href="holdings.html">Holdings</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="vansima_hub_live.html">Hub</a></li>
+        <li><a href="cart.html">Cart 🛒</a></li>
       </ul>
-      <nav>
-</nav>
     </nav>
   </header>
 
-  <script scr="https://js.stripe.com/v3/"></script>
-  <script src="cart.js"></script>
+  <main>
+    <section class="hero tech-hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content reveal">
+        <img src="vansima-logo.png" alt="Vansima logo" class="hero-logo">
+        <p class="eyebrow">Built with Vansima Technology™</p>
+        <h1>Technology. Wealth. Business. Real Estate.</h1>
+        <p class="hero-subtitle">Your Future. Your Vision.</p>
+        <p class="hero-copy">Vansima is building a self-made ecosystem of digital tools that help people plan, build, invest, and create lasting legacy.</p>
+        <div class="hero-actions">
+          <a href="technology.html" class="btn-primary">Explore Vansima Technology</a>
+          <a href="vansima_hub_live.html" class="btn-secondary">Enter the Hub</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- Hero Banner -->
-  <section class="hero futuristic-display">
-    <div class="silhouette"></div>
-    <div class="floating-block dream">Dreams</div>
-    <div class="floating-block focus">Focus</div>
-    <div class="floating-block freedom">Freedom</div>
-    <div class="floating-block productivity">Productivity</div>
+    <section class="ecosystem-section">
+      <p class="section-kicker">The Vansima Ecosystem</p>
+      <h2>One brand. Multiple paths to build the future.</h2>
+      <div class="ecosystem-grid">
+        <article class="ecosystem-card">
+          <span class="card-icon">💻</span>
+          <h3>Vansima Technology</h3>
+          <p>AI-powered tools, planners, dashboards, and digital systems built for execution.</p>
+          <a href="technology.html">Explore Technology →</a>
+        </article>
+        <article class="ecosystem-card">
+          <span class="card-icon">💰</span>
+          <h3>Vansima Wealth</h3>
+          <p>Wealth Score™, credit goals, savings progress, and financial planning for families.</p>
+          <a href="wealth.html">Build Wealth →</a>
+        </article>
+        <article class="ecosystem-card">
+          <span class="card-icon">🏢</span>
+          <h3>Vansima Business</h3>
+          <p>Business plans, funding readiness, client systems, and launch support for entrepreneurs.</p>
+          <a href="business.html">Start Building →</a>
+        </article>
+        <article class="ecosystem-card">
+          <span class="card-icon">🏠</span>
+          <h3>Vansima Holdings</h3>
+          <p>Real estate deal analysis, portfolio tracking, flips, rentals, and long-term ownership.</p>
+          <a href="holdings.html">Analyze Deals →</a>
+        </article>
+      </div>
+    </section>
 
-    <div class="hero-text">
-      <h1>Your Future, Your Vision</h1>
-      <p>Empower Your Focus. Build Your Future. Execute Your Vision.</p>
-      <a href="./shop.html" class="btn-hero">Explore the Collection</a>
-    </div>
-  </section>
+    <section class="signature-section">
+      <div>
+        <p class="section-kicker">The Standard</p>
+        <h2>Every product should carry the signature.</h2>
+        <p>From websites to apps to business tools, the Vansima mark should communicate ownership, quality, and legacy.</p>
+      </div>
+      <div class="signature-card">
+        <p>Built with Vansima Technology™</p>
+        <span>Your Future. Your Vision.</span>
+      </div>
+    </section>
 
-  <!-- Vansima Hub -->
-  <section id="hub" class="hub">
-    <h2>The Vansima Hub</h2>
-    <p>Exclusive access to what’s coming next.</p>
-    <a href="./vansima_hub_live.html" class="btn">Enter the Hub</a>
-  </section>
+    <section id="newsletter" class="cta-section">
+      <h2>Join the Vansima future list.</h2>
+      <p>Get updates on Vansima Wealth, Vansima AI, digital products, and new launches.</p>
+      <form class="email-form">
+        <input type="email" placeholder="Enter your email" aria-label="Email address">
+        <button type="submit">Join</button>
+      </form>
+    </section>
+  </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Vansima Digital. All rights reserved.</p>
+  <footer class="site-footer-dark">
+    <p>© 2026 Vansima. All Rights Reserved.</p>
+    <p><strong>Built with Vansima Technology™</strong></p>
+    <p>Your Future. Your Vision.</p>
   </footer>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="cart.js"></script>
 </body>
 </html>
