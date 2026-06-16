@@ -3,296 +3,267 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop | Vansima</title>
-  <style>
-    /* Basic styles for the shop page */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-
-    header {
-    background-color: #0d0d0d;
-    color: white;
-    padding: 1.2rem 2rem;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      margin: 0 1em;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-    }
-
-    nav ul li a.active {
-      text-decoration: underline;
-    }
-
-    .shop-hero {
-      text-align: center;
-      padding: 2em 1em;
-      background-color: #e0e0e0;
-    }
-
-    #shop {
-      padding: 2em 1em;
-    }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2em;
-    }
-
-    .product-card {
-      background-color: rgba(255, 255, 255, 0.704);
-      border: 1px solid #ddd;
-      padding: 1em;
-      text-align: center;
-    }
-
-    .product-card img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 16px;
-    }
-
-    .add-to-cart {
-      background-color: #f69b40;
-      color: white;
-      border: none;
-      padding: 0.5em 1em;
-      cursor: pointer;
-    }
-
-   .site-footer {
-  background-color: #0f172a; /* deep corporate navy */
-  color: #e5e7eb;
-  padding: 3rem 2rem 1.5rem;
-  font-size: 0.9rem;
-}
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.footer-brand h3 {
-  margin-bottom: 0.5rem;
-  letter-spacing: 2px;
-}
-
-.footer-brand p {
-  max-width: 280px;
-  color: #9ca3af;
-}
-
-.footer-links {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.footer-links a {
-  color: #e5e7eb;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-.footer-bottom {
-  border-top: 1px solid #1f2933;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  text-align: center;
-  color: #9ca3af;
-  font-size: 0.8rem;
-}
-
-.product-variant {
-  font-size: 0.85rem;
-  color: #999;
-  margin-bottom: 0.4rem;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-  </style>
-
-  <!-- Link your main stylesheet -->
-  <link rel="stylesheet" href="styles.css" />
+  <title>Vansima Marketplace | Built with Vansima Technology</title>
+  <meta name="description" content="Explore the Vansima Marketplace: wealth tools, digital guides, future technology products, and Spark City collectibles." />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<body>
-
-  <!-- NAVIGATION -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">VANSIMA</div>
+<body class="marketplace-page">
+  <header class="site-header marketplace-header">
+    <nav class="navbar glass-nav">
+      <a class="logo-lockup" href="index.html" aria-label="Vansima Home">
+        <img src="vansima-logo.png" alt="Vansima logo" class="nav-logo" />
+        <span>VANSIMA</span>
+      </a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="cart.html" class="active">Cart</a></li>
-        <li><a href="vansima_hub_live.html">Hub</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="wealth.html">Wealth</a></li>
+        <li><a href="business.html">Business</a></li>
+        <li><a href="holdings.html">Holdings</a></li>
+        <li><a href="vansima_hub_live.html">Spark City</a></li>
+        <li><a href="shop.html" class="active">Marketplace</a></li>
+        <li><a href="cart.html">Cart</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- SHOP HERO -->
-  <section class="shop-hero">
-    <h1>Build Focus. Execute Your Vision.</h1>
-    <p>Designed to help you stay aligned, focused, and unstoppable.</p>
-  </section>
+  <main>
+    <section class="marketplace-hero">
+      <div class="marketplace-orb orb-one"></div>
+      <div class="marketplace-orb orb-two"></div>
+      <p class="section-kicker">Built with Vansima Technology™</p>
+      <h1>Vansima Marketplace</h1>
+      <p class="hero-copy">Tools, stories, and premium resources designed to help you build focus, wealth, business, and legacy.</p>
+      <div class="hero-actions marketplace-actions">
+        <a href="#featured" class="btn-primary">Explore Products</a>
+        <a href="app.html" class="btn-secondary">Download App</a>
+      </div>
+      <div class="marketplace-stat-strip">
+        <span>Digital Guides</span>
+        <span>Wealth Tools</span>
+        <span>VX‑1 Concepts</span>
+        <span>Spark City Universe</span>
+      </div>
+    </section>
 
-  <!-- SHOP SECTION -->
-  <section id="shop">
+    <section class="marketplace-categories">
+      <article class="market-category-card">
+        <span>📚</span>
+        <h3>Learning</h3>
+        <p>Guides, books, and resources for discipline, focus, and success.</p>
+      </article>
+      <article class="market-category-card">
+        <span>💎</span>
+        <h3>Wealth+</h3>
+        <p>Premium app features, AI coaching, Wealth Score™, and planning tools.</p>
+      </article>
+      <article class="market-category-card">
+        <span>🎧</span>
+        <h3>Technology</h3>
+        <p>Future Vansima hardware concepts and productivity-driven technology.</p>
+      </article>
+      <article class="market-category-card spark-card">
+        <span>✨</span>
+        <h3>Spark City</h3>
+        <p>Fan packs, crystal hunts, collectibles, and movie universe drops.</p>
+      </article>
+    </section>
 
-    <div class="product-grid">
+    <section id="featured" class="featured-product-section">
+      <div class="featured-product-card">
+        <div class="featured-copy">
+          <p class="section-kicker">Featured Membership</p>
+          <h2>Wealth+</h2>
+          <p>Your personal wealth operating system inside the Vansima app.</p>
+          <ul class="feature-checklist">
+            <li>Vansima AI Wealth, Business, and Real Estate Coach</li>
+            <li>Wealth Score™ insights and goal tracking</li>
+            <li>Real Estate Deal Analyzer</li>
+            <li>Funding readiness and business planning tools</li>
+          </ul>
+          <a href="app.html" class="btn-primary">Join Wealth+</a>
+        </div>
+        <div class="featured-phone-card" aria-hidden="true">
+          <div class="market-phone-shell">
+            <div class="market-phone-screen">
+              <span>VANSIMA</span>
+              <h3>Wealth+</h3>
+              <p>AI Coach • Wealth Score™ • Deal Analyzer</p>
+              <div class="score-ring">92</div>
+              <small>Legacy Builder</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- PRODUCT CARD -->
-      <div class="product-card">
-  <img src="./ChatGPT Image Jan 31, 2026 at 02_58_47 PM.png" alt="Vansima eBook">
+    <section class="marketplace-products-section">
+      <div class="section-heading">
+        <p class="section-kicker">Marketplace Drops</p>
+        <h2>Build your future with Vansima products.</h2>
+      </div>
 
-  <h3>Vansima eBook</h3>
+      <div class="marketplace-grid">
+        <article class="market-product-card premium-product" data-category="learning">
+          <div class="product-badge">Available Now</div>
+          <img src="./ChatGPT Image Jan 31, 2026 at 02_58_47 PM.png" alt="10 Daily Habits to Boost Focus and Energy eBook" />
+          <div class="market-product-body">
+            <p class="product-variant">Digital Lifestyle Guide</p>
+            <h3>10 Daily Habits</h3>
+            <p>A guided framework to build focus, discipline, energy, and intentional execution.</p>
+            <div class="product-bottom-row">
+              <strong>$12.99</strong>
+              <button class="add-to-cart market-cart-btn" data-id="ebook-001" data-name="Vansima eBook" data-price="12.99">Add to Cart</button>
+            </div>
+          </div>
+        </article>
 
-  <p class="product-desc">
-    A guided framework to build focus, discipline, and intentional execution.
-  </p>
+        <article class="market-product-card" data-category="learning">
+          <div class="product-badge coming">Coming Soon</div>
+          <img src="./ChatGPT Image Jan 27, 2026 at 12_34_01 AM.png" alt="Rich and Responsible book cover" />
+          <div class="market-product-body">
+            <p class="product-variant">Wealth Book</p>
+            <h3>Rich & Responsible</h3>
+            <p>A modern guide to wealth, discipline, ownership, and intentional success.</p>
+            <div class="product-bottom-row">
+              <strong>$24.99</strong>
+              <button disabled class="market-cart-btn disabled">Coming Soon</button>
+            </div>
+          </div>
+        </article>
 
-  <p class="price">$12.99</p>
+        <article class="market-product-card tech-product" data-category="technology">
+          <div class="product-badge concept">Concept Drop</div>
+          <img src="./ChatGPT Image Jan 27, 2026 at 12_34_13 AM.png" alt="VX-1 Pro Executive Edition headphones" />
+          <div class="market-product-body">
+            <p class="product-variant">Executive Edition</p>
+            <h3>VX‑1 PRO</h3>
+            <p>Noise-isolating headphones designed for deep focus and productivity.</p>
+            <div class="product-bottom-row">
+              <strong>$299.99</strong>
+              <button disabled class="market-cart-btn disabled">Coming Soon</button>
+            </div>
+          </div>
+        </article>
 
-  <button 
-  class="btn-primary add-to-cart"
-  data-id="ebook-001"
-  data-name="Vansima eBook"
-  data-price="12.99">
-  Add to Cart
-</button>
+        <article class="market-product-card tech-product" data-category="technology">
+          <div class="product-badge concept">Concept Drop</div>
+          <img src="./958BB340-BB02-4E75-BD6E-C9614B56A996.PNG" alt="VX-1 Pro Champagne Edition headphones" />
+          <div class="market-product-body">
+            <p class="product-variant">Champagne Edition</p>
+            <h3>VX‑1 PRO</h3>
+            <p>Clean, modern sound with intentional design for creators and builders.</p>
+            <div class="product-bottom-row">
+              <strong>$299.99</strong>
+              <button disabled class="market-cart-btn disabled">Coming Soon</button>
+            </div>
+          </div>
+        </article>
 
-</div>
+        <article class="market-product-card tech-product" data-category="technology">
+          <div class="product-badge limited">Limited</div>
+          <img src="./9CBCE5A7-6FB5-4512-9A70-5619E37D73BA.PNG" alt="VX-1 Pro Holiday Edition headphones" />
+          <div class="market-product-body">
+            <p class="product-variant">Holiday Edition</p>
+            <h3>VX‑1 PRO</h3>
+            <p>Elevated style with powerful focus-driven sound for the next generation.</p>
+            <div class="product-bottom-row">
+              <strong>$299.99</strong>
+              <button disabled class="market-cart-btn disabled">Coming Soon</button>
+            </div>
+          </div>
+        </article>
 
-    <div class="product-grid">
+        <article class="market-product-card spark-product" data-category="spark-city">
+          <div class="product-badge spark">Spark City</div>
+          <div class="spark-product-art">
+            <div class="spark-crystal-shop" id="marketSparkCrystal" title="Find the crystal"></div>
+            <h3>✨</h3>
+          </div>
+          <div class="market-product-body">
+            <p class="product-variant">Fan Collection</p>
+            <h3>Spark City Fan Pack</h3>
+            <p>Digital wallpapers, character reveals, crystal art, and behind-the-scenes updates.</p>
+            <div class="product-bottom-row">
+              <strong>Coming Soon</strong>
+              <a href="vansima_hub_live.html" class="market-link-btn">Explore</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <!-- HEADPHONES - BLACK -->
-  <div class="product-card">
-    <img src="./ChatGPT Image Jan 27, 2026 at 12_34_13 AM.png" alt="Vansima Headphones - Black">
+    <section class="coming-soon-section">
+      <p class="section-kicker">Coming Soon To Vansima</p>
+      <h2>More than products. A full ecosystem.</h2>
+      <div class="coming-grid">
+        <div>🏠 <strong>Real Estate Academy</strong><span>Learn rentals, flips, and portfolio growth.</span></div>
+        <div>🤖 <strong>Vansima AI</strong><span>Premium coach inside the app.</span></div>
+        <div>🎬 <strong>Spark City Collection</strong><span>Movie universe drops and fan exclusives.</span></div>
+        <div>📈 <strong>Advanced Wealth Tools</strong><span>Built for goals, funding, and ownership.</span></div>
+      </div>
+    </section>
 
-    <h3>VX-1 PRO</h3>
-    <p class="product-variant">Executive Edition</p>
+    <section class="marketplace-cta-section">
+      <div class="signature-card">
+        <p class="section-kicker">Marketplace Mission</p>
+        <h2>Every product should help you build something.</h2>
+        <p>Focus. Wealth. Business. Real Estate. Storytelling. Vansima Marketplace is where the ecosystem becomes tangible.</p>
+        <div class="hero-actions marketplace-actions">
+          <a href="app.html" class="btn-primary">Download App</a>
+          <a href="cart.html" class="btn-secondary">View Cart</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <p class="product-description">
-      Noise-isolating headphones designed for deep focus and productivity.
-    </p>
-
-    <p class="product-price">$299.99</p>
-
-    <button disabled>COMING SOON</button>
-  </div>
-
-  <!-- HEADPHONES - SILVER -->
-  <div class="product-card">
-    <img src="./958BB340-BB02-4E75-BD6E-C9614B56A996.PNG" alt="Vansima Headphones - Silver">
-
-    <h3>VX-1 PRO</h3>
-    <p class="product-variant">Champagne Edition</p>
-
-    <p class="product-description">
-      Clean, modern sound with intentional design for creators.
-    </p>
-
-    <p class="product-price">$299.99</p>
-
-    <button disabled>COMING SOON</button>
-  </div>
-
-  <!-- HEADPHONES - ROSE GOLD -->
-  <div class="product-card">
-    <img src="./9CBCE5A7-6FB5-4512-9A70-5619E37D73BA.PNG" alt="Vansima Headphones - Rose Gold">
-
-    <h3>VX-1 PRO</h3>
-    <p class="product-variant">Holiday Edition (Limited)</p>
-
-    <p class="product-description">
-      Elevated style with powerful focus-driven sound.
-    </p>
-
-    <p class="product-price">$299.99</p>
-
-    <button disabled>COMING SOON</button>
-  </div>
-
-  <!-- RICH & RESPONSIBLE BOOK -->
-  <div class="product-card">
-    <img src="./ChatGPT Image Jan 27, 2026 at 12_34_01 AM.png" alt="Rich and Responsible Book">
-
-    <h3>Rich & Responsible</h3>
-
-    <p class="product-description">
-      A modern guide to wealth, discipline, and intentional success.
-    </p>
-
-    <p class="product-price">$24.99</p>
-
-   <button disabled>COMING SOON</button>
-  </div>
-
-</div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Vansima. All rights reserved.</p>
+  <footer class="site-footer-dark">
+    <p>© 2026 Vansima. All Rights Reserved.</p>
+    <p><strong>Built with Vansima Technology™</strong></p>
+    <p>Your Future. Your Vision.</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </div>
   </footer>
 
-  <!-- JS (only if you already have cart logic) -->
+  <div class="spark-toast" id="marketSparkToast">✨ You found a Spark Crystal.<br><span>10% off energy unlocked. Coming soon.</span></div>
+
   <script src="cart.js"></script>
-
   <script>
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const CART_KEY = "vansima_cart_v1";
+    const legacyCart = JSON.parse(localStorage.getItem("cart") || "[]");
+    const currentCart = JSON.parse(localStorage.getItem(CART_KEY) || JSON.stringify(legacyCart));
 
-  document.querySelectorAll(".add-to-cart").forEach(button => {
-    button.addEventListener("click", () => {
-      const product = {
-        id: button.dataset.id,
-        name: button.dataset.name,
-        price: button.dataset.price,
-        quantity: 1
-      };
+    document.querySelectorAll(".add-to-cart").forEach(button => {
+      button.addEventListener("click", () => {
+        const product = {
+          id: button.dataset.id,
+          name: button.dataset.name,
+          price: Number(button.dataset.price),
+          quantity: 1
+        };
 
-      const existing = cart.find(item => item.id === product.id);
+        const existing = currentCart.find(item => item.id === product.id);
+        if (existing) existing.quantity += 1;
+        else currentCart.push(product);
 
-      if (existing) {
-        existing.quantity += 1;
-      } else {
-        cart.push(product);
-      }
-
-      localStorage.setItem("cart", JSON.stringify(cart));
-
-      alert("Added to cart 🛒");
+        localStorage.setItem(CART_KEY, JSON.stringify(currentCart));
+        localStorage.setItem("cart", JSON.stringify(currentCart));
+        button.textContent = "Added ✓";
+        setTimeout(() => (button.textContent = "Add to Cart"), 1400);
+      });
     });
-  });
-</script>
 
+    const crystal = document.getElementById("marketSparkCrystal");
+    const toast = document.getElementById("marketSparkToast");
+    if (crystal && toast) {
+      crystal.addEventListener("click", () => {
+        toast.classList.add("show");
+        setTimeout(() => toast.classList.remove("show"), 3200);
+      });
+    }
+  </script>
 </body>
 </html>
